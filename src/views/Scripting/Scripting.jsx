@@ -4,7 +4,8 @@ import {
 } from 'reactstrap';
 import axios from 'axios';
 
-import { PanelHeader, FormInputs, CardAuthor, CardSocials } from 'components';
+import { PanelHeader, FormInputs, CardAuthor, CardSocials, Button } from 'components';
+import CustomButton from '../../components/CustomButton/CustomButton'
 
 import userBackground from 'assets/img/bg5.jpg';
 import userAvatar from 'assets/img/mike.jpg';
@@ -129,38 +130,16 @@ class User extends React.Component{
                                                     label : "Feedback & Preferences",
                                                     inputProps : {
                                                         type : "textarea",
-                                                        rows: "4",
+                                                        rows: "8",
                                                         cols: "80",
+                                                        placeholder: "Anything you want your voice-actor to know before hand? Any specific requests?",
                                                     }
                                                 }
                                             ]}
                                         />
-                                        <FormInputs
-                                            ncols = {["col-md-12"]}
-                                            proprieties = {[
-                                                {
-                                                    label : "Feedback & Preferences",
-                                                    inputProps : {
-                                                        type : "textarea",
-                                                        rows: "4",
-                                                        cols: "80",
-                                                    }
-                                                }
-                                            ]}
-                                        />
-                                        <FormInputs
-                                            onSubmit={this.onSubmit}
-                                            ncols = {["col-md-12"]}
-                                            proprieties = {[
-                                                {
-                                                    label : "",
-                                                    inputProps : {
-                                                        type : "submit",
-                                                        value: 'Submit'
-                                                    }
-                                                }
-                                            ]}
-                                        />
+                                        <button className='btn btn-primary w-100 text-uppercase'>
+                                            Submit
+                                        </button>
                                     </form>
                                 </CardBody>
                             </Card>

@@ -120,7 +120,7 @@ class User extends React.Component{
                                                         type : "textarea",
                                                         rows: "4",
                                                         cols: "80",
-                                                        defaultValue: "Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.",
+                                                        defaultValue: "",
                                                         placeholder: "Here can be your description"
                                                     }
                                                 }
@@ -143,9 +143,7 @@ class User extends React.Component{
                                         description="michael23"
                                     />
                                     <p className="description text-center">
-                                        "Lamborghini Mercy <br/>
-                                        Your chick she so thirsty <br/>
-                                        I'm in that two seat Lambo"
+                                        
                                     </p>
                                 </CardBody>
                                 <hr />

@@ -27,6 +27,11 @@ class Footer extends React.Component{
                                    Contact Us
                                 </a>
                             </li>
+                            <li>
+                                <a href="">
+                                   Leave us feedback
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <div className="copyright">

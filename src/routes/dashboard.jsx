@@ -1,5 +1,6 @@
 import Dashboard from 'views/Dashboard/Dashboard.jsx';
 import Scripting from 'views/Scripting/Scripting.jsx';
+import Payments from 'views/Payments/Payments.jsx';
 import Notifications from 'views/Notifications/Notifications.jsx';
 import Icons from 'views/Icons/Icons.jsx';
 import Typography from 'views/Typography/Typography.jsx';
@@ -9,12 +10,13 @@ import Upgrade from 'views/Upgrade/Upgrade.jsx';
 import UserPage from 'views/UserPage/UserPage.jsx';
 
 var dashRoutes = [
-    { path: "/dashboard", name: "Dashboard", icon: "design_app", component: Dashboard },
+    { path: "/dashboard", name: "Audivity Dashboard", icon: "media-1_button-play", component: Dashboard },
     { path: "/scripting", name: "Start New Project", icon: "design_app", component: Scripting },
     { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
     // { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
     // { path: "/notifications", name: "Notifications", icon: "ui-1_bell-53", component: Notifications },
     { path: "/user-page", name: "User Profile", icon: "users_single-02", component: UserPage },
+    { path: "/payments", name: "Payments", icon: "business_money-coins", component: Payments },
     // { path: "/extended-tables", name: "Table List", icon: "files_paper", component: TableList },
     // { path: "/typography", name: "Typography", icon: "design-2_ruler-pencil", component: Typography },
     // { pro: true, path: "/upgrade", name: "Upgrade to PRO", icon: "objects_spaceship", component: Upgrade },
